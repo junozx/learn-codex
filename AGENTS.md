@@ -30,14 +30,16 @@ This file defines repository-wide instructions for Codex agents.
 2. Use `contexts/review.md` for review/audit requests.
 3. Use `contexts/research.md` for investigation/comparison requests.
 4. Explicit user instruction overrides the default context choice.
+5. Context files are repository assets; actual auto-loading depends on the Codex runtime/integration.
 
 ## Skills Routing
 
 1. Backend Python changes: prefer `python-patterns`, `python-testing`, `tdd-workflow`.
 2. API contract work: prefer `api-design`.
 3. Database/schema changes: prefer `database-migrations`.
-4. Frontend React + Semi work: prefer `frontend-patterns`, `semi-design-guide`.
+4. Frontend React + Semi work: prefer `frontend-patterns`, `semi-ui-skills`.
 5. Large tasks with many tools/files: use `context-budget` to reduce prompt bloat.
+6. For deterministic behavior, explicitly mention required skills in the task prompt.
 
 ## Language Rule Docs
 
@@ -53,6 +55,7 @@ This file defines repository-wide instructions for Codex agents.
 4. Use `code-reviewer` / `python-reviewer` / `typescript-reviewer` for focused reviews.
 5. Use `database-reviewer` for SQL/schema/index reviews.
 6. Use `performance-optimizer` for bottleneck and runtime optimization.
+7. Availability and auto-selection of subagents depend on runtime support for project-scoped agents.
 
 ## Engineering Constraints
 

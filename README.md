@@ -79,11 +79,20 @@ make codex-wiring
 5. Put custom subagents in `.codex/agents/*.toml`.
 6. Ask Codex to implement and then run `make check`.
 
+## Runtime Compatibility Notes
+
+1. This template is designed to be compatible with Codex-style workflows.
+2. Actual auto-loading and routing behavior depends on the Codex runtime/integration you use.
+3. `contexts/` are repository assets and routing hints, not guaranteed auto-loaded components.
+4. Project-scoped subagent availability depends on runtime support for `.codex/agents/*.toml`.
+5. For deterministic behavior, explicitly name required skills/subagents in your prompt.
+
 ## Auto-Wiring Map
 
 1. Context presets: `contexts/dev.md` (implementation), `contexts/review.md` (review), `contexts/research.md` (research).
-2. Skill activation is keyword/intent driven; you can also mention skill names explicitly.
-3. Custom subagents can be requested by name: `planner`, `architect`, `code-reviewer`, `python-reviewer`, `typescript-reviewer`, `database-reviewer`, `performance-optimizer`.
+2. Skill and subagent routing is recommendation-oriented and runtime-dependent.
+3. Skills can be requested by name (for example `python-patterns`, `frontend-patterns`, `semi-ui-skills`).
+4. Custom subagents can be requested by name: `planner`, `architect`, `code-reviewer`, `python-reviewer`, `typescript-reviewer`, `database-reviewer`, `performance-optimizer`.
 
 ## Official References
 

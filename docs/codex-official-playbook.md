@@ -17,6 +17,7 @@ This repository maps to Codex official concepts as follows:
 4. Use `.codex/rules` for command approval policy.
 5. Use `.codex/agents` for specialist subagents.
 6. Validate with `make check`.
+7. Treat auto-loading behavior as runtime-dependent; explicitly naming required skills/agents is the most reliable workflow.
 
 ## References
 

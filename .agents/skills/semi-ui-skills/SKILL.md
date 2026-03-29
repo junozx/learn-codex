@@ -1,6 +1,6 @@
 ---
-name: semi-design-guide
-description: 使用 Semi Design 组件的完整指南，包括 MCP 工具使用流程、常见模式、最佳实践。当你需要查询 Semi Design 组件、生成组件代码或解决使用问题时，请使用此技能。
+name: semi-ui-skills
+description: 使用 Semi Design 组件的完整指南，包括组件查询流程、常见模式与最佳实践。可选结合 Semi MCP（若当前运行时支持）提升检索效率。
 ---
 
 # Semi Design 使用指南

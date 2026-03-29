@@ -18,6 +18,5 @@ Additional instructions for files under `frontend/`.
 ## Preferred Skills
 
 1. `frontend-patterns`
-2. `semi-design-guide`
+2. `semi-ui-skills`
 3. `api-design` when frontend-backend contract changes are needed.
-
