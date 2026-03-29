@@ -1,0 +1,23 @@
+# Repository command-approval defaults.
+# Rules are evaluated top to bottom; first match wins.
+
+prefix_rule(
+    pattern = ["git", "reset", "--hard"],
+    decision = "prompt",
+    justification = "This command discards local changes. Confirm before continuing.",
+    match = [
+        "git reset --hard",
+    ],
+    not_match = [
+        "git reset --soft HEAD~1",
+    ],
+)
+
+prefix_rule(
+    pattern = ["rm", "-rf"],
+    decision = "prompt",
+    justification = "Recursive delete detected. Confirm path scope before continuing.",
+    match = [
+        "rm -rf tmp",
+    ],
+)

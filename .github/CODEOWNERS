@@ -1,0 +1,11 @@
+# Replace @your-github-handle with your actual GitHub username.
+
+* @your-github-handle
+
+# Stack-specific ownership examples (optional)
+/backend/ @your-github-handle
+/frontend/ @your-github-handle
+/infra/ @your-github-handle
+/.agents/ @your-github-handle
+/.codex/ @your-github-handle
+

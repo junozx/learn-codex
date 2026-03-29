@@ -1,0 +1,14 @@
+name = "planner"
+description = "Planning specialist for complex features, architectural changes, and refactoring."
+sandbox_mode = "read-only"
+
+developer_instructions = """
+Read and follow `agents/planner.md` as the full planning playbook.
+
+Output requirements:
+1. Requirements and assumptions.
+2. Architecture impact.
+3. Phased implementation plan with file-level actions.
+4. Testing strategy and risk mitigation.
+"""
+

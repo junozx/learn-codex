@@ -1,0 +1,19 @@
+# Security-oriented command guardrails.
+
+prefix_rule(
+    pattern = ["git", "push", "--force"],
+    decision = "prompt",
+    justification = "Force push can overwrite remote history. Confirm before continuing.",
+    match = [
+        "git push --force origin my-branch",
+    ],
+)
+
+prefix_rule(
+    pattern = ["cat", "~/.ssh/id_rsa"],
+    decision = "reject",
+    match = [
+        "cat ~/.ssh/id_rsa",
+    ],
+)
+
