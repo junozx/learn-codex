@@ -25,10 +25,18 @@ make frontend-install
 make run-frontend
 ```
 
-## MySQL Run
+## MySQL (Local Native Service)
 
 ```bash
-make mysql-up
+make db-local-check
+```
+
+## MySQL (Containerized, Optional)
+
+Use this only for deployment-like or containerized test scenarios:
+
+```bash
+make mysql-up-docker
 ```
 
 ## CI Failure Triage (Backend)

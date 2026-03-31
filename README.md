@@ -50,10 +50,10 @@ make frontend-install
 make run-frontend
 ```
 
-3. Start local MySQL:
+3. Check local MySQL (native service, non-Docker):
 
 ```bash
-make mysql-up
+make db-local-check
 ```
 
 ## Command Reference
@@ -66,9 +66,19 @@ make check
 make run
 make frontend-install
 make run-frontend
-make mysql-up
+make db-local-check
+make mysql-up-docker
 make codex-wiring
 ```
+
+## Local DB Policy
+
+1. Default local development uses native local MySQL (no Docker required).
+2. Docker compose is kept for deployment-like/containerized scenarios only.
+3. If you need containerized DB temporarily, use:
+   ```bash
+   make mysql-up-docker
+   ```
 
 ## How To Use With Codex
 

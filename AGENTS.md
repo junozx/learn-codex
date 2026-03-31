@@ -64,6 +64,7 @@ This file defines repository-wide instructions for Codex agents.
 3. Prefer deterministic logic and deterministic tests.
 4. Do not change unrelated files.
 5. Database schema changes must be captured under `infra/mysql/init/`.
+6. Default local development should not require Docker; treat Docker usage as deployment/containerized workflow unless explicitly requested.
 
 ## Output Requirements
 
