@@ -1,5 +1,7 @@
 # Codex-Aligned Starter For Python + MySQL + React + Semi
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 This repository is tailored to your current stack while keeping Codex official structure:
 
 1. `AGENTS.md` for repository instructions.
